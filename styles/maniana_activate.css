@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-primario: #F6F6F6;
+    --color-secundario: white;
+    --color-terciario: #F0952A;
+    --color-hover: #272727;
+
+    --fuente-montserrat: "Montserrat", sans serif;
+    --fuente-krona: "Krona One", sans serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-primario);
+    color: var(--color-hover);
+    font-family: var(--fuente-montserrat);
+}
+
+.header {
+    padding: 2% 0 0 6%;
+    background-color: var(--color-terciario);
+    color: var(--color-secundario);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.header__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__link {
+    font-family: var(--fuente-montserrat);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-secundario);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.header__menu__link:hover {
+    color: var(--color-hover);
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    min-height: 80vh; /* Ajusta según sea necesario */
+}
+
+.info-evento {
+    max-width: 1000px;
+    background-color: var(--color-secundario);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.info-evento h1 {
+    font-family: var(--fuente-krona);
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.info-evento p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.imagenes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.imagen-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.imagen-animada {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.imagen-animada:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    background-color: var(--color-terciario);
+    padding: 24px;
+    color: var(--color-secundario);
+    text-align: center;
+    font-size: 24px;
+}

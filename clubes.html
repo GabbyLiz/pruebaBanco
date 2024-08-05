@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clubes - Actívate</title>
+    <link rel="stylesheet" href="./styles/clubes.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__menu">
+            <a class="header__menu__link" href="index.html">Inicio</a>
+            <a class="header__menu__link" href="futbol.html">Campeonato de Fútbol</a>
+            <a class="header__menu__link" href="maniana_activate.html">Mañana Actívate BI</a>
+            <a class="header__menu__link" href="clubes.html">Clubes</a>
+        </nav>
+    </header>
+    <main>
+        <section class="inscripcion">
+            <h2>Inscripción a los Clubes</h2>
+            <form id="inscripcion-form">
+                <label for="role">Rol:</label>
+                <select id="role" name="role">
+                    <option value="coach">Coach</option>
+                    <option value="participant">Participante</option>
+                </select>
+                <label for="club">Club:</label>
+                <select id="club" name="club">
+                    <option value="Yoga">Yoga</option>
+                    <option value="Running">Running</option>
+                    <option value="Lectura">Lectura</option>
+                </select>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="lastname">Apellido:</label>
+                <input type="text" id="lastname" name="lastname" required>
+                <label for="office">Oficina:</label>
+                <input type="text" id="office" name="office" required>
+                <button type="submit">Inscribirse</button>
+            </form>
+        </section>
+        <section class="participantes">
+            <h2>Participantes</h2>
+            <div id="participants-container"></div>
+        </section>
+        <section class="reglamento">
+            <h2>Reglamento</h2>
+            <p>Próximamente...</p>
+        </section>
+        <section class="lugar-sesiones">
+            <h2>Lugar de las Sesiones</h2>
+            <p>Próximamente...</p>
+        </section>
+        <section class="calendario">
+            <h2>Calendario de Actividades</h2>
+            <p>Próximamente...</p>
+        </section>
+        <section class="informacion-clubes">
+            <h2>Información de los Clubes</h2>
+            <div class="club-info">
+                <h3>Yoga</h3>
+                <p>Modalidad virtual a nivel nacional, dirigido por Andrea Pérez, gerente de agencia en Guayaquil, se realiza todos los jueves de 17:00 a 18:00, vía Teams.</p>
+            </div>
+            <div class="club-info">
+                <h3>Running</h3>
+                <p>Modalidad presencial, solo Quito, dirigida por Juan Pérez, analista de crédito, se realiza todos los martes y jueves de 18:30 a 19:30 en la Carolina – Cruz del Papa.</p>
+            </div>
+            <div class="club-info">
+                <h3>Lectura</h3>
+                <p>Modalidad híbrida a nivel nacional, dirigido por Pedro Pérez, líder de innovación, se realiza todos los miércoles, de 17:00 a 18:00, vía Teams y en la sala Creando Más en Quito.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <img src="./assets/bancoLogo.png" alt="Logo Banco Internacional"> 
+        <p>BANCO INTERNACIONAL</p>
+    </footer>
+    <script src="./scripts/clubes.js"></script>
+</body>
+</html>
